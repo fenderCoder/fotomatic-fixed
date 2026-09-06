@@ -51,6 +51,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  color: #4a4a4a;
 }
 
 header nav ul {
@@ -117,9 +120,18 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+   
+  /* background image */
+  background-image: url('../images/banner-landingpage.jpg'); /* Path to your image */
+  background-size: cover;       /* Scales the image to fill the section */
+  background-position: center;  /* Centers the image in the section */
+  background-repeat: no-repeat; /* Stops the image from tiling */
+  min-height: 400px;            /* Gives the section height so it shows */
+  color: #ffffff;               /* Changes text color for contrast */
 }
 
 #sign-up-cta {
+  margin: 10.625rem 6.25rem auto 6.25rem;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
