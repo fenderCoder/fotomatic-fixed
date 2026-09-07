@@ -5,6 +5,10 @@ html {
   font-size: 16px;
 }
 
+img {
+  width: 100%;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -222,30 +226,35 @@ header .mobile {
 /* Features Section */
 
 #features-section {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-colums: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 2.275rem;
+  
   padding: 4rem 5%;
   background-color: #f3f3f3;
   margin-top: 4rem;
 }
 
 .feature {
-  flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  display: grid;
+  grid-template-rows: max-content 65% 1fr;
+
   background-color: white;
+  max-height: 40rem;
 }
 
 .feature .image-container {
+  object-fit: cover;
+
+  margin: 2rem 2rem 2.5rem 2rem;
   width: 90%;
   height: 65%;
-  margin: 0 auto;
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
+  line-height: 1.2;
   color: #4a4a4a;
 }
 
